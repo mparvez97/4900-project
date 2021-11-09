@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #3c3c3c;
+    box-sizing: border-box;
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: #f4f7fd;
+}
+
+#show {
+    display: block;
+    text-align: center;
+}
+#hide {
+    display: none;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    /* min-height: 80px; */
+    /* box-shadow: 0 2px 5px #24242454; */
+    border: 2px solid #ddd;
+}
+
+header .header-wraper {
+    width: 65%;
+    padding: 10px;
+    /* height: 60px; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+header .header-wraper .logo-wraper {
+    display: inline-flex;
+    place-items: center;
+}
+header .header-wraper .logo-wraper img {
+    width: 80px;
+}
+header .header-wraper .logo-wraper h1 {
+    color: red;
+    margin-left: 20px;
+}
+
+header .header-wraper .menu {
+    display: flex;
+    flex-direction: row-reverse;
+}
+header .header-wraper .menu ul {
+    list-style: none;
+}
+header .header-wraper .menu ul li {
+    display: inline-block;
+    margin: 10px 10px 10px 20px;
+}
+header .header-wraper .menu ul li a,
+header .header-wraper .second-menu ul li a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header .header-wraper .second-menu,
+header .header-wraper .second-menu-hide {
+    display: none;
+}
+header .header-wraper .hamburger-menu {
+    display: none;
+}
+
+/* ===== HOME ===== */
+
+#home #home-bg-cover {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+}
+
+#home #home-bg-cover .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+#home #home-bg-cover .overlay .overlay-text {
+    text-align: center;
+}
+#home #home-bg-cover .overlay .overlay-text h1 {
+    font-size: 65px;
+    color: #ffffff;
+}
+#home #home-bg-cover .overlay .overlay-text h2 {
+    font-size: 35px;
+    color: #ffffff;
+}
+
+/* ===== JOB ===== */
+
+#jobs-container {
+    width: 65%;
+    margin: auto;
+    margin-bottom: 50px;
+	
+}
+#jobs-container #list-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 200px;
+    
+}
+#jobs-container #heading-container {
+    padding: 20px 20px 20px 0;
+}
+#jobs-container #heading-container h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+}
+#jobs-container .item-full {
+    width: 145%;
+    height: 240px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    /* box-shadow: 0 0 5px #24242454; */
+    border: 2px solid #ddd;
+    font-family: 'Heebo', sans-serif;
+    display: grid;
+    grid-template-rows: 2fr;
+}
+#jobs-container .item-full .details {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#jobs-container .item-full .details button {
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+#jobs-container .item-full .details .apply-btn {
+    background-color: #A200A6;
+}
+#jobs-container .item-full .details .apply-btn a {
+    color: #ffffff;
+}
+#jobs-container .item-full .details button a {
+    text-decoration: none;
+}
+#jobs-container .item-full h1 {
+    font-size: 1.125rem !important;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#jobs-container .item-full h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+#jobs-container .item-full h1,
+#jobs-container .item-full h3 {
+    margin-top: 5px;
+}
+#jobs-container .item-full h1 svg,
+#jobs-container .item-full h3 svg {
+    margin-right: 8px;
+}
